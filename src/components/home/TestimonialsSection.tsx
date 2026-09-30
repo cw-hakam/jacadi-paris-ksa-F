@@ -32,11 +32,11 @@ export function TestimonialsSection() {
     <section className="py-8 md:py-20">
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-normal text-foreground mb-4">
             Loved by Families
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Join thousands of happy parents who trust Little Boys
+            Join thousands of happy parents who trust Lille &amp; Nest
           </p>
         </div>
 

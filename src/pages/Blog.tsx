@@ -135,7 +135,7 @@ const Blog = () => {
           title="Blog"
           description="Tips, guides, and inspiration for raising curious, creative, and happy children."
           image="/blog.png"
-          imageAlt="Little Boys Blog"
+          imageAlt="Lille &amp; Nest Journal"
         />
 
         {/* Blog Posts */}

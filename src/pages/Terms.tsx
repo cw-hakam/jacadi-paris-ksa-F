@@ -17,14 +17,14 @@ const Terms = () => {
             </p>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">1. Acceptance of Terms</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground">
-                By accessing and using Little Boys website and services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+                By accessing and using Lille &amp; Nest website and services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">2. Use of Services</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">2. Use of Services</h2>
               <p className="text-muted-foreground mb-4">
                 You agree to use our services only for lawful purposes and in accordance with these Terms. You agree not to:
               </p>
@@ -38,14 +38,14 @@ const Terms = () => {
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">3. Product Information</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">3. Product Information</h2>
               <p className="text-muted-foreground">
                 We strive to provide accurate product descriptions and pricing. However, we do not warrant that product descriptions, pricing, or other content is accurate, complete, or error-free. We reserve the right to correct errors and update information at any time.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">4. Orders and Payment</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">4. Orders and Payment</h2>
               <p className="text-muted-foreground mb-4">
                 By placing an order, you agree to:
               </p>
@@ -60,42 +60,42 @@ const Terms = () => {
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">5. Shipping and Delivery</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">5. Shipping and Delivery</h2>
               <p className="text-muted-foreground">
                 Shipping times are estimates and not guaranteed. We are not responsible for delays caused by shipping carriers or circumstances beyond our control. Risk of loss passes to you upon delivery to the carrier.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">6. Returns and Refunds</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">6. Returns and Refunds</h2>
               <p className="text-muted-foreground">
                 Please refer to our Returns Policy for information about returns and refunds. All returns are subject to our approval and must meet our return conditions.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">7. Intellectual Property</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">7. Intellectual Property</h2>
               <p className="text-muted-foreground">
-                All content on our website, including text, graphics, logos, images, and software, is the property of Little Boys or its licensors and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our written permission.
+                All content on our website, including text, graphics, logos, images, and software, is the property of Lille &amp; Nest or its licensors and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our written permission.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">8. Limitation of Liability</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">8. Limitation of Liability</h2>
               <p className="text-muted-foreground">
-                To the fullest extent permitted by law, Little Boys shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our services.
+                To the fullest extent permitted by law, Lille &amp; Nest shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our services.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">9. Indemnification</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">9. Indemnification</h2>
               <p className="text-muted-foreground">
-                You agree to indemnify and hold harmless Little Boys from any claims, damages, losses, liabilities, and expenses arising out of your use of our services or violation of these Terms.
+                You agree to indemnify and hold harmless Lille &amp; Nest from any claims, damages, losses, liabilities, and expenses arising out of your use of our services or violation of these Terms.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="font-display text-2xl font-bold text-foreground mb-4">10. Changes to Terms</h2>
+              <h2 className="font-display text-2xl font-normal text-foreground mb-4">10. Changes to Terms</h2>
               <p className="text-muted-foreground">
                 We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting. Your continued use of our services after changes constitutes acceptance of the modified Terms.
               </p>
