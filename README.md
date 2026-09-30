@@ -1,235 +1,138 @@
-# Little Boys - E-commerce Platform for Children's Products
+# Lille & Nest — Scandinavian Children's Organic Innerwear & Loungewear
 
-A modern, feature-rich e-commerce platform built with React, TypeScript, and Tailwind CSS, specializing in toys, clothing, books, and outdoor products for children.
+A high-end, DTC e-commerce storefront crafted for **Lille & Nest** (*Nordic Slumber & Nest*). Built with **React 18**, **TypeScript**, **Tailwind CSS**, and **Vite**, integrated with **Google Stitch MCP Server** for AI-driven UI design workflows.
 
-![Little Boys](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![React](https://img.shields.io/badge/react-18.3.1-blue.svg)
-![TypeScript](https://img.shields.io/badge/typescript-5.8.3-blue.svg)
-![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Lille & Nest Banner](/images/stitch/hero-children-loungewear.jpg)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/little-boys)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/little-boys)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Mostafa-SAID7/little-boys-F)
+![GOTS Certified](https://img.shields.io/badge/GOTS-100%25%20Organic%20Cotton-green.svg)
+![OEKO-TEX](https://img.shields.io/badge/OEKO--TEX%C2%AE-Standard%20100-blue.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 
-## 📋 Table of Contents
+---
 
-- [Features](#features)
-- [Demo](#demo)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Documentation](#documentation)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+## 🌿 Brand Philosophy & Design System
 
-## 🎯 Demo
+**Lille & Nest** embodies an atmospheric, warm Scandinavian-editorial aesthetic. Designed for design-conscious parents who value hypoallergenic purity, ethical craftsmanship, and timeless nursery aesthetics.
 
-[Live Demo](https://little-boys.vercel.app) | [Documentation](docs/) | [Report Bug](https://github.com/yourusername/little-boys/issues) | [Request Feature](https://github.com/yourusername/little-boys/issues)
+- **Design System Theme**: `Nordic Slumber & Nest`
+- **Headline Typography**: [`Newsreader`](https://fonts.google.com/specimen/Newsreader) (Serif Display)
+- **Body & Controls**: [`Plus Jakarta Sans`](https://fonts.google.com/specimen/Plus+Jakarta+Sans) (Humanist Sans)
+- **Color Palette**:
+  - **Soft Terracotta** (`#B86751` / `hsl(13 41% 52%)`) — Primary CTA & editorial focus
+  - **Muted Sage** (`#9DA893` / `hsl(95 11% 62%)`) — Secondary highlights & botanical purity
+  - **Sunbeam Butter** (`#EFE8D8` / `hsl(43 41% 89%)`) — Tinted containers & callouts
+  - **Canvas Cream** (`#FBF9F5` / `hsl(40 33% 97%)`) — Default page canvas background
+  - **Soft Linen** (`#F5F1EA` / `hsl(38 27% 94%)`) — Elevation & card containers
+  - **Charcoal Slate** (`#2D2926` / `hsl(24 8% 16%)`) — High-contrast, gentle typography
+
+---
+
+## 🎨 Google Stitch MCP Integration
+
+This codebase is configured with a native workspace MCP (Model Context Protocol) server connecting to **Google Stitch APIs**:
+
+- **Location**: [`.agents/mcp_config.json`](.agents/mcp_config.json)
+- **Server Endpoint**: `https://stitch.googleapis.com/mcp`
+- **Transport**: Remote SSE / HTTP POST JSON-RPC (`protocolVersion: 2024-11-05`)
+- **Capabilities**: Full AI design system generation, screen editing, and variant generation.
+
+---
 
 ## ✨ Features
 
-Comprehensive list of features available in [docs/FEATURES.md](docs/FEATURES.md)
+- 🛍️ **DTC E-Commerce Catalog**: Filterable organic innerwear, sleepwear, and loungewear.
+- 🌿 **Organic & Safety Badging**: GOTS 100% Organic, OEKO-TEX® Standard 100, and flat-lock seam badges.
+- 📱 **Fully Responsive**: Mobile-first fluid 12-column Scandinavian editorial grid.
+- 🛒 **Slide-out Cart & Wishlist**: Real-time reactive cart management (`CartContext`).
+- 🌓 **Dark & Light Mode**: Accessible contrast tokens for nighttime nursery browsing.
+- 🚀 **Vercel Production Ready**: Single Page Application rewrite rules & cache control headers (`vercel.json`).
 
-**Highlights:**
-- 🛍️ Full e-commerce functionality with cart and wishlist
-- 🔍 Advanced search, filter, and sort capabilities
-- 📱 Fully responsive design
-- 🌓 Dark/Light theme support
-- 📝 Blog with pagination and filtering
-- 👤 User profile management
-- ⭐ Product reviews and ratings
-- 🎨 Modern UI with smooth animations
+---
 
-## 🚀 Technologies
-
-Built with modern web technologies. See [docs/TECHNOLOGIES.md](docs/TECHNOLOGIES.md) for details.
-
-**Core Stack:**
-- React 18.3.1
-- TypeScript 5.6.2
-- Vite 5.4.19
-- Tailwind CSS 3.4.17
-- Shadcn/ui Components
-- React Router 7.1.1
-- Tanstack Query 5.62.11
-
-## 🏁 Getting Started
-
-### Quick Start
-
-See [QUICK_START.md](docs/QUICK_START.md) for a 5-minute setup guide.
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn
+- **Node.js**: `v18.0.0` or higher
+- **npm**: `v9.0.0` or higher
 
-### Installation
+### Installation & Local Development
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Mostafa-SAID7/little-boys-F.git
 
-# Navigate to project directory
-cd little-boys
+# Navigate to project root
+cd little-boys-F
 
 # Install dependencies
 npm install
 
-# Start development server
+# Start local development server
 npm run dev
+```
 
-# Build for production
+Open `http://localhost:5173` (or the URL shown in terminal) to view the storefront.
+
+### Build & Preview
+
+```bash
+# Production build
 npm run build
 
-# Preview production build
+# Preview build output
 npm run preview
 ```
 
-The app will be available at `http://localhost:8080`
+---
 
-For detailed setup instructions, see [PROJECT_SETUP.md](docs/PROJECT_SETUP.md)
-
-### Deployment
-
-#### Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/little-boys)
-
-**Manual Deployment:**
-
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy to Vercel
-vercel
-
-# Deploy to production
-vercel --prod
-```
-
-**Environment Variables:**
-
-Create a `.env` file based on `.env.example`:
-
-```bash
-cp .env.example .env
-```
-
-Configure the following variables:
-- `VITE_API_URL` - API endpoint URL
-- `VITE_APP_NAME` - Application name
-- `VITE_CONTACT_EMAIL` - Contact email address
-
-#### Deploy to Netlify
-
-```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Build the project
-npm run build
-
-# Deploy to Netlify
-netlify deploy --prod --dir=dist
-```
-
-#### Deploy to GitHub Pages
-
-```bash
-# Build the project
-npm run build
-
-# Deploy using gh-pages
-npx gh-pages -d dist
-```
-
-## 📁 Project Structure
-
-Detailed structure documentation in [docs/STRUCTURE.md](docs/STRUCTURE.md)
+## 📁 Repository Structure
 
 ```
-little-boys/
+little-boys-F/
+├── .agents/
+│   └── mcp_config.json      # Workspace Stitch MCP Server configuration
+├── docs/
+│   ├── DEPLOYMENT.md        # Vercel deployment guide
+│   ├── DESIGN_SYSTEM.md     # Nordic Slumber & Nest design system tokens
+│   ├── STITCH_MCP.md        # Google Stitch MCP integration details
+│   └── STRUCTURE.md         # Comprehensive architecture map
+├── public/
+│   └── images/stitch/       # High-resolution Stitch design & lookbook assets
+├── screenshots/
+│   └── stitch/              # Reference storefront designs & screenshots
 ├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── context/        # React context providers
-│   ├── data/           # Static data and mock data
-│   ├── types/          # TypeScript type definitions
-│   └── lib/            # Utility functions
-├── public/             # Static assets
-└── docs/               # Documentation files
+│   ├── components/          # Reusable UI, layout & product components
+│   ├── context/             # CartContext & state management
+│   ├── data/                # Lille & Nest product catalog
+│   ├── pages/               # Application page routes
+│   ├── index.css            # HSL design tokens & global CSS
+│   └── main.tsx             # Application entry point
+├── tailwind.config.ts       # Tailwind CSS configuration
+└── vercel.json              # Vercel deployment & routing config
 ```
-
-## 📚 Documentation
-
-Comprehensive documentation is available in the `docs/` folder:
-
-- [QUICK_START.md](docs/QUICK_START.md) - 5-minute quick start guide
-- [PROJECT_SETUP.md](docs/PROJECT_SETUP.md) - Complete setup guide
-- [FEATURES.md](docs/FEATURES.md) - Complete feature list
-- [TECHNOLOGIES.md](docs/TECHNOLOGIES.md) - Technology stack details
-- [STRUCTURE.md](docs/STRUCTURE.md) - Project structure guide
-- [STYLES.md](docs/STYLES.md) - Styling guidelines and theme
-- [USE_CASES.md](docs/USE_CASES.md) - Common use cases and examples
-- [DEPLOYMENT.md](docs/DEPLOYMENT.md) - Deployment guide for various platforms
-- [CHANGELOG.md](docs/CHANGELOG.md) - Version history
-- [CONTRIBUTING.md](docs/CONTRIBUTING.md) - Contribution guidelines
-- [CONTRIBUTORS.md](docs/CONTRIBUTORS.md) - Project contributors
-- [CODE_OF_CONDUCT.md](docs/CODE_OF_CONDUCT.md) - Community guidelines
-- [SECURITY.md](docs/SECURITY.md) - Security policies
-- [FILES_CREATED.md](docs/FILES_CREATED.md) - Complete file inventory
-- [COMMIT_SUMMARY.md](docs/COMMIT_SUMMARY.md) - Latest changes summary
-
-## 🎨 Styling
-
-The project uses a custom design system with:
-- Tailwind CSS for utility-first styling
-- Shadcn/ui for component library
-- Custom color palette with theme support
-- Consistent spacing and typography
-- Smooth animations and transitions
-
-See [docs/STYLES.md](docs/STYLES.md) for detailed styling guidelines.
-
-## 🤝 Contributing
-
-We welcome contributions! Please read our [Contributing Guidelines](docs/CONTRIBUTING.md) and [Code of Conduct](docs/CODE_OF_CONDUCT.md) before submitting pull requests.
-
-### Quick Start for Contributors
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 🔒 Security
-
-Security is a priority. Please review our [Security Policy](docs/SECURITY.md) and report vulnerabilities responsibly.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Authors
-
-- **M.Said** - [Portfolio](https://m-said-portfolio.netlify.app/)
-
-## 🙏 Acknowledgments
-
-- Shadcn/ui for the component library
-- Lucide React for icons
-- Tailwind CSS team for the utility framework
-- React community for excellent tools and libraries
-
-## 📞 Support
-
-For support, please open an issue in the GitHub repository or contact the maintainers.
 
 ---
 
-Made with ❤️ by M.Said
+## 🚢 Deployment
+
+The project is configured for seamless deployment on **Vercel**:
+
+1. Push your code to GitHub (`main` branch).
+2. Import the repository in [Vercel Dashboard](https://vercel.com).
+3. Framework Preset: **Vite**
+4. Output Directory: **`dist`**
+5. Vercel automatically applies rewrite rules from [`vercel.json`](vercel.json).
+
+See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for complete details.
+
+---
+
+## 📄 License & Maintainer
+
+- **Maintainer**: UI/UX Development Team
+- **Author Email**: `developer.reem.ali@gmail.com`
+- **Repository**: [`https://github.com/Mostafa-SAID7/little-boys-F`](https://github.com/Mostafa-SAID7/little-boys-F)
+- **License**: MIT
