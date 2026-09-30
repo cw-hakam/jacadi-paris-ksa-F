@@ -1,91 +1,31 @@
-﻿# Changelog
+# Changelog — Lille & Nest
 
-All notable changes to Little Boys e-commerce platform will be documented in this file.
+All notable changes to the **Lille & Nest** Scandinavian e-commerce platform will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2024-03-15
+---
+
+## [1.1.0] - 2026-09-30
 
 ### Added
-- Initial release of Little Boys e-commerce platform
-- Product catalog with categories (Toys, Clothing, Books, Outdoor)
-- Shopping cart with add/remove/update functionality
-- Wishlist feature with toggle functionality
-- Product detail pages with image gallery
-- Product reviews and ratings system
-- Blog with search, filter, sort, and pagination
-- Blog post detail pages with slug routing
-- User profile management with tabs
-- Search functionality for products
-- Dark/Light theme support
-- Responsive design for all devices
-- PageHero component for consistent page headers
-- Toast notifications for user feedback
-- Share functionality (Facebook, Twitter, Email, Copy Link)
-- Category filters with images and count badges
-- Active link highlighting in navigation
-- FAQ page with accordion
-- Contact form
-- About page with team section
-- Gift Cards page
-- Sustainability page
-- Privacy Policy and Terms of Service pages
-- Newsletter subscription
-- Customer testimonials
-- Related products section
-- Breadcrumb navigation
-- 404 Not Found page
+- **Google Stitch MCP Server Integration** — Native workspace configuration in [`.agents/mcp_config.json`](../.agents/mcp_config.json) connecting to `https://stitch.googleapis.com/mcp`.
+- **Nordic Slumber & Nest Design System** — Scandinavian earth-tone palette (`#B86751` Soft Terracotta, `#9DA893` Muted Sage, `#FBF9F5` Canvas Cream, `#F5F1EA` Soft Linen).
+- **Google Fonts** — Integrated `Newsreader` (Editorial Serif Display) and `Plus Jakarta Sans` (Humanist Body).
+- **Stitch Design Assets** — Integrated high-resolution Stitch lookbook images in [`public/images/stitch/`](../public/images/stitch/).
+- **GOTS & OEKO-TEX® Badging** — Certified organic cotton, anti-chafe seamwork, and zero-chemical safety badges across catalog and product pages.
+- **Vercel Production Setup** — Configured Single Page Application rewrites and cache controls in [`vercel.json`](../vercel.json).
 
-### Features
-- Real-time search across products and blog
-- Advanced filtering by category, age, and tags
-- Multiple sort options (price, rating, date, title)
-- Pagination for blog posts
-- Image gallery with thumbnails and zoom
-- Size selection for clothing items
-- Quantity selector with stock validation
-- Review modal with star rating
-- Profile tabs (Account, Password, Orders, Wishlist, Payment)
-- Form validation with error messages
-- Responsive mobile menu
-- Sticky header navigation
-- Footer with organized links
-- Theme persistence
-- Cart persistence in local storage
-
-### Design
-- Custom color palette with semantic colors
-- Nunito and Quicksand font families
-- Consistent spacing (8px base unit)
-- Standard border radius (4px)
-- Smooth transitions and animations
-- Accessible focus states
-- Category-specific colors
-- Badge variants for different contexts
-
-### Performance
-- Optimized bundle size (~470KB JS, ~76KB CSS)
-- Code splitting by route
-- Lazy loading images
-- Tree shaking unused code
-- Minified production build
-- Compressed assets
-
-## [Unreleased]
-
-### Planned
-- User authentication and login
-- Payment gateway integration
-- Order tracking system
-- Email notifications
-- Product recommendations
-- Advanced analytics dashboard
-- Multi-language support
-- Currency conversion
-- Inventory management
-- Customer review moderation
+### Refactored
+- **Header & Footer** — Rebranded with official Lille & Nest logo and Scandinavian editorial navigation.
+- **Hero & About Pages** — Replaced generic hero banners with Lille & Nest editorial story and Stitch storefront design showcase.
+- **Documentation Architecture** — Consolidated markdown documentation, removing obsolete Docker, Netlify, and Nginx configurations.
 
 ---
 
-For more details, see the [GitHub repository](https://github.com/yourusername/little-boys).
+## [1.0.0] - 2026-03-15
+
+### Added
+- Initial release of children's e-commerce platform.
+- Product catalog, shopping cart drawer, wishlist, and dark/light mode.
