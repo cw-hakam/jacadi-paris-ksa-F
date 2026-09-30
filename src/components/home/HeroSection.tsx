@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, ShieldCheck, HeartHandshake, Leaf } from 'lucide-react';
+import { content } from '@/data/content';
 
 export function HeroSection() {
+  const { hero } = content;
+
   return (
     <section className="relative hero-gradient overflow-hidden">
       <div className="container py-12 md:py-20 lg:py-28">
@@ -11,28 +14,27 @@ export function HeroSection() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs md:text-sm font-semibold tracking-wider uppercase mb-6">
               <Sparkles className="h-4 w-4" />
-              <span>Nordic Slumber & Nest Collection</span>
+              <span>{hero.badge}</span>
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-normal text-foreground leading-[1.15] tracking-tight mb-6">
-              Tactile Maternal Warmth & <span className="italic text-primary font-normal">Pure Organic Seams</span>
+              {hero.titleStart}<span className="italic text-primary font-normal">{hero.titleHighlight}</span>
             </h1>
             
             <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 font-body leading-relaxed">
-              Serene Scandinavian-editorial loungewear & innerwear for babies, toddlers & kids. 
-              Crafted from 100% GOTS-certified organic cotton & breathable bamboo weaves with hypoallergenic flat-lock stitching.
+              {hero.description}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button asChild size="lg" className="rounded-full px-8 bg-primary hover:bg-primary/90 text-primary-foreground text-base">
                 <Link to="/products">
-                  Explore Collection
+                  {hero.primaryCta}
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full px-8 border-primary/20 text-foreground hover:bg-card text-base">
                 <Link to="/products?category=clothes">
-                  Organic Innerwear
+                  {hero.secondaryCta}
                 </Link>
               </Button>
             </div>
@@ -40,13 +42,13 @@ export function HeroSection() {
             {/* Trust badges */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-10 text-xs md:text-sm text-muted-foreground">
               <span className="flex items-center gap-2 font-medium">
-                <Leaf className="h-4 w-4 text-secondary" /> 100% GOTS Organic
+                <Leaf className="h-4 w-4 text-secondary" /> {hero.badges[0].text}
               </span>
               <span className="flex items-center gap-2 font-medium">
-                <ShieldCheck className="h-4 w-4 text-primary" /> OEKO-TEX® Certified
+                <ShieldCheck className="h-4 w-4 text-primary" /> {hero.badges[1].text}
               </span>
               <span className="flex items-center gap-2 font-medium">
-                <HeartHandshake className="h-4 w-4 text-secondary" /> Hypoallergenic Seams
+                <HeartHandshake className="h-4 w-4 text-secondary" /> {hero.badges[2].text}
               </span>
             </div>
           </div>
@@ -64,10 +66,10 @@ export function HeroSection() {
                 {/* Floating Tag */}
                 <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-md px-4 py-3 rounded-xl border border-primary/10 shadow-soft max-w-xs">
                   <span className="text-[10px] font-semibold tracking-widest text-primary uppercase block mb-1">
-                    OEKO-TEX® Standard 100
+                    {hero.floatingTag.subtitle}
                   </span>
                   <p className="font-display font-medium text-sm text-foreground">
-                    Sensory-Friendly Ribbed Cotton Sets
+                    {hero.floatingTag.title}
                   </p>
                 </div>
               </div>

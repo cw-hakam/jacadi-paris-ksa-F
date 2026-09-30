@@ -1,47 +1,23 @@
 import { Star } from 'lucide-react';
-
-const testimonials = [
-  {
-    id: 1,
-    name: 'Sarah M.',
-    role: 'Mom of 2',
-    content: 'The quality of the toys is amazing! My kids love everything we\'ve ordered. The age recommendations are spot-on.',
-    rating: 5,
-    avatar: '/c1.png',
-  },
-  {
-    id: 2,
-    name: 'James P.',
-    role: 'Dad of 1',
-    content: 'Fast shipping and beautiful packaging. The organic cotton clothes are so soft and perfect for my toddler\'s sensitive skin.',
-    rating: 5,
-    avatar: '/c2.png',
-  },
-  {
-    id: 3,
-    name: 'Emma K.',
-    role: 'Grandma',
-    content: 'Found the perfect gifts for my grandchildren. The book collection is wonderful and the wooden toys are heirloom quality.',
-    rating: 5,
-    avatar: '/c3.png',
-  },
-];
+import { content } from '@/data/content';
 
 export function TestimonialsSection() {
+  const { testimonials } = content;
+
   return (
     <section className="py-8 md:py-20">
       <div className="container">
         <div className="text-center mb-8">
           <h2 className="font-display text-3xl md:text-4xl font-normal text-foreground mb-4">
-            Loved by Families
+            {testimonials.title}
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Join thousands of happy parents who trust Lille &amp; Nest
+            {testimonials.subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial) => (
+          {testimonials.reviews.map((testimonial) => (
             <article
               key={testimonial.id}
               className="bg-card rounded p-6 shadow-soft hover:shadow-card transition-shadow duration-300 flex flex-col"

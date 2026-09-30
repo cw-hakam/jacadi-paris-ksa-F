@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Youtube, Lock, ShieldCheck } from 'lucide-react';
+import { content } from '@/data/content';
 
 const footerLinks = {
   shop: [
@@ -29,6 +30,7 @@ const footerLinks = {
 };
 
 export function Footer() {
+  const { footer } = content;
   return (
     <footer className="bg-muted border-t border-border">
       <div className="container py-12 md:py-16">
@@ -43,7 +45,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed font-body">
-              Tactile maternal warmth & quiet Scandinavian minimalism. 100% GOTS-certified organic cotton innerwear & sleepwear.
+              {footer.description}
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
@@ -115,7 +117,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} <span className="font-semibold text-foreground">Lille & Nest</span>. All rights reserved.
+            © {new Date().getFullYear()} <span className="font-semibold text-foreground">{footer.copyright}</span>. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
