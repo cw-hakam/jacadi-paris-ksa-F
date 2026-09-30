@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Lille & Nest"
+description = "An organic children’s clothing storefront with product browsing, search, wishlist, shopping cart, checkout, and editorial pages."
+version = "1.0.0"
+id = "artifacts/lille-nest"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25212
+
+[services.development]
+run = "pnpm --filter @workspace/lille-nest run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lille-nest", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/lille-nest/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25212"
+BASE_PATH = "/"
