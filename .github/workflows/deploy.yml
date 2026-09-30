@@ -1,39 +1,50 @@
-name: Deploy to Vercel
+# Deployment is handled automatically by Vercel's GitHub App integration.
+#
+# When you push to `main`, Vercel detects the change and deploys automatically.
+# No secrets or tokens are needed here — configure the project once in:
+#   https://vercel.com/dashboard → Import Project → Connect GitHub repo
+#
+# This CI workflow only runs quality checks (lint + build) as a gate.
+# The actual deployment is triggered natively by Vercel after CI passes.
+#
+# If you need to trigger Vercel via GitHub Actions (e.g. monorepo setup),
+# add these secrets to GitHub → Settings → Secrets → Actions:
+#   VERCEL_TOKEN      — from vercel.com/account/tokens
+#   VERCEL_ORG_ID     — from vercel.com/account → Settings → General
+#   VERCEL_PROJECT_ID — from Project Settings → General
+# Then uncomment the workflow below.
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    name: Deploy Storefront
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'npm'
-      
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Build project
-        run: npm run build
-      
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+# name: Deploy to Vercel
+#
+# on:
+#   push:
+#     branches: [main]
+#
+# jobs:
+#   deploy:
+#     name: Deploy to Production
+#     runs-on: ubuntu-latest
+#     environment:
+#       name: production
+#       url: ${{ steps.deploy.outputs.preview-url }}
+#     steps:
+#       - uses: actions/checkout@v4
+#
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: '20'
+#           cache: 'npm'
+#
+#       - name: Install Vercel CLI
+#         run: npm install --global vercel@latest
+#
+#       - name: Pull Vercel environment
+#         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+#
+#       - name: Build project
+#         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+#
+#       - name: Deploy to Vercel
+#         id: deploy
+#         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
