@@ -52,15 +52,12 @@ export function Header() {
           </Button>
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 -ml-2 md:ml-0">
+          <Link to="/" className="flex items-center -ml-2 md:ml-0">
             <img 
               src="/images/stitch/lille-nest-logo.png" 
               alt="Lille & Nest" 
               className="h-8 md:h-10 w-auto object-contain"
             />
-            <span className="font-display font-bold text-xl md:text-2xl text-foreground tracking-tight">
-              Lille <span className="text-primary font-normal italic">& Nest</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

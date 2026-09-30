@@ -35,15 +35,12 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center mb-4">
               <img 
                 src="/images/stitch/lille-nest-logo.png" 
                 alt="Lille & Nest" 
                 className="h-8 w-auto object-contain"
               />
-              <span className="font-display font-bold text-xl text-foreground">
-                Lille <span className="text-primary italic font-normal">& Nest</span>
-              </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed font-body">
               Tactile maternal warmth & quiet Scandinavian minimalism. 100% GOTS-certified organic cotton innerwear & sleepwear.
