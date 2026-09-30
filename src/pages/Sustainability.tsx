@@ -2,7 +2,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { CartSidebar } from '@/components/cart/CartSidebar';
 import { PageHero } from '@/components/layout/PageHero';
-import { Leaf, Recycle, Heart, Package } from 'lucide-react';
+import { Leaf, ShieldCheck, HeartHandshake, Sparkles } from 'lucide-react';
 
 const Sustainability = () => {
   return (
@@ -10,77 +10,62 @@ const Sustainability = () => {
       <Header />
       <main className="flex-1">
         <PageHero
-          title="Our Commitment"
-          description="We believe in creating a better world for the little ones we serve. Every choice we make is guided by our commitment to the planet."
-          image="/Commitment.png"
-          imageAlt="Our Commitment to Sustainability"
+          title="GOTS & Organic Pure Seams"
+          description="At Lille & Nest, environmental integrity and infant skin safety guide every thread. Explore our Scandinavian ethical standards and zero-chemical commitments."
+          image="/images/stitch/briefs-flatlay-editorial.jpg"
+          imageAlt="Lille & Nest Organic Materials & Pure Seams"
         />
 
         {/* Content */}
-        <div className="container">
-          <div className="max-w-4xl mx-auto space-y-8">
+        <div className="container py-12 md:py-16">
+          <div className="max-w-4xl mx-auto space-y-12">
             {/* Eco-Friendly Materials */}
-            <section>
+            <section className="bg-card p-8 rounded-2xl border border-primary/10 shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-12 h-12 rounded bg-green-100 dark:bg-green-900/30">
-                  <Leaf className="h-6 w-6 text-green-600" />
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/20 text-secondary">
+                  <Leaf className="h-6 w-6" />
                 </div>
-                <h2 className="font-display text-3xl font-bold text-foreground">Eco-Friendly Materials</h2>
+                <h2 className="font-display text-2xl md:text-3xl font-normal text-foreground">100% GOTS-Certified Organic Cotton</h2>
               </div>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
+              <div className="prose prose-lg max-w-none text-muted-foreground font-body leading-relaxed">
                 <p>
-                  We carefully select products made from sustainable, organic, and non-toxic materials. From organic cotton clothing to wooden toys crafted from responsibly sourced wood, every item in our collection meets strict environmental standards.
+                  Our innerwear and sleepwear utilize unbleached, non-GMO organic cotton grown without synthetic fertilizers or pesticides. This preserves natural soil health while ensuring pure softness against newborn skin.
                 </p>
-                <ul className="space-y-2 mt-4">
-                  <li>GOTS certified organic cotton</li>
-                  <li>FSC certified wood products</li>
-                  <li>Non-toxic, water-based paints and dyes</li>
-                  <li>Recycled and recyclable packaging</li>
+                <ul className="grid sm:grid-cols-2 gap-3 mt-4 text-sm font-medium text-foreground list-disc list-inside">
+                  <li>Global Organic Textile Standard (GOTS) Certified</li>
+                  <li>Breathable Bamboo-Cotton Ribbed Weaves</li>
+                  <li>Hypoallergenic Water-Based Vegetable Dyes</li>
+                  <li>100% Biodegradable & Recyclable Packaging</li>
                 </ul>
               </div>
             </section>
 
-            {/* Sustainable Packaging */}
-            <section>
+            {/* OEKO-TEX Standard 100 */}
+            <section className="bg-card p-8 rounded-2xl border border-primary/10 shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-12 h-12 rounded bg-blue-100 dark:bg-blue-900/30">
-                  <Package className="h-6 w-6 text-blue-600" />
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary">
+                  <ShieldCheck className="h-6 w-6" />
                 </div>
-                <h2 className="font-display text-3xl font-bold text-foreground">Sustainable Packaging</h2>
+                <h2 className="font-display text-2xl md:text-3xl font-normal text-foreground">OEKO-TEX® Standard 100 Testing</h2>
               </div>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
+              <div className="prose prose-lg max-w-none text-muted-foreground font-body leading-relaxed">
                 <p>
-                  Our packaging is 100% recyclable and made from recycled materials. We've eliminated plastic wherever possible and use biodegradable alternatives. Every package is designed to minimize waste while ensuring your products arrive safely.
+                  Every fabric batch, elastic waist, and flat-lock thread undergoes independent laboratory testing for over 300 harmful chemicals, phthalates, and heavy metals. Guaranteed safe for infants and toddlers with sensitive skin or eczema.
                 </p>
               </div>
             </section>
 
-            {/* Circular Economy */}
-            <section>
+            {/* Flat-Lock Seamwork */}
+            <section className="bg-card p-8 rounded-2xl border border-primary/10 shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-12 h-12 rounded bg-purple-100 dark:bg-purple-900/30">
-                  <Recycle className="h-6 w-6 text-purple-600" />
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/20 text-secondary">
+                  <HeartHandshake className="h-6 w-6" />
                 </div>
-                <h2 className="font-display text-3xl font-bold text-foreground">Circular Economy</h2>
+                <h2 className="font-display text-2xl md:text-3xl font-normal text-foreground">Sensory-Friendly Seam Construction</h2>
               </div>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
+              <div className="prose prose-lg max-w-none text-muted-foreground font-body leading-relaxed">
                 <p>
-                  We encourage our customers to recycle, donate, or return products they no longer need. Our take-back program ensures that items are either refurbished for resale or responsibly recycled, keeping them out of landfills.
-                </p>
-              </div>
-            </section>
-
-            {/* Community Impact */}
-            <section>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-12 h-12 rounded bg-pink-100 dark:bg-pink-900/30">
-                  <Heart className="h-6 w-6 text-pink-600" />
-                </div>
-                <h2 className="font-display text-3xl font-bold text-foreground">Community Impact</h2>
-              </div>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p className="mb-10">
-                  We partner with organizations that support children's education and environmental conservation. A portion of every purchase goes toward planting trees and supporting educational programs in underserved communities.
+                  We replace raised, abrasive clothing seams with flat-lock anti-chafe stitching. Paired with tagless printed labels, our innerwear provides frictionless comfort designed for active play and peaceful sleep.
                 </p>
               </div>
             </section>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Youtube, Lock } from 'lucide-react';
+import { Instagram, Facebook, Youtube, Lock, ShieldCheck } from 'lucide-react';
 
 const footerLinks = {
   shop: [
@@ -9,42 +9,44 @@ const footerLinks = {
     { label: 'Sale', href: '/products?filter=sale' },
   ],
   categories: [
+    { label: 'Organic Innerwear', href: '/products?category=clothes' },
+    { label: 'Sleepwear & Pajamas', href: '/products?category=clothes' },
     { label: 'Toys & Games', href: '/products?category=toys' },
-    { label: 'Clothing', href: '/products?category=clothes' },
-    { label: 'Books', href: '/products?category=books' },
-    { label: 'Outdoor', href: '/products?category=outdoor' },
+    { label: 'Storybooks', href: '/products?category=books' },
   ],
   help: [
     { label: 'Contact Us', href: '/contact' },
     { label: 'FAQs', href: '/faq' },
-    { label: 'Shipping', href: '/shipping' },
-    { label: 'Returns', href: '/returns' },
+    { label: 'Shipping Policy', href: '/shipping' },
+    { label: 'Returns & Exchanges', href: '/returns' },
   ],
   about: [
-    { label: 'Our Story', href: '/about' },
-    { label: 'Sustainability', href: '/sustainability' },
+    { label: 'Nordic Story', href: '/about' },
+    { label: 'GOTS & OEKO-TEX®', href: '/sustainability' },
     { label: 'Gift Cards', href: '/gift-cards' },
-    { label: 'Blog', href: '/blog' },
+    { label: 'Editorial Journal', href: '/blog' },
   ],
 };
 
 export function Footer() {
   return (
     <footer className="bg-muted border-t border-border">
-      <div className="container py-8 md:py-8">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+      <div className="container py-12 md:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="flex items-center justify-center w-10 h-10 rounded bg-primary text-primary-foreground font-bold text-lg">
-                LB
-              </div>
+              <img 
+                src="/images/stitch/lille-nest-logo.png" 
+                alt="Lille & Nest" 
+                className="h-8 w-auto object-contain"
+              />
               <span className="font-display font-bold text-xl text-foreground">
-                Little <span className="text-primary">Boys</span>
+                Lille <span className="text-primary italic font-normal">& Nest</span>
               </span>
             </Link>
-            <p className="text-sm text-muted-foreground mb-4">
-              Curated toys, clothes & books for curious little minds.
+            <p className="text-sm text-muted-foreground mb-4 leading-relaxed font-body">
+              Tactile maternal warmth & quiet Scandinavian minimalism. 100% GOTS-certified organic cotton innerwear & sleepwear.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
@@ -61,8 +63,8 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Shop</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-semibold text-foreground mb-4 text-base">Shop</h4>
+            <ul className="space-y-2.5">
               {footerLinks.shop.map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -74,8 +76,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Categories</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-semibold text-foreground mb-4 text-base">Categories</h4>
+            <ul className="space-y-2.5">
               {footerLinks.categories.map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -87,8 +89,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Help</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-semibold text-foreground mb-4 text-base">Care & Help</h4>
+            <ul className="space-y-2.5">
               {footerLinks.help.map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -100,8 +102,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">About</h4>
-            <ul className="space-y-2">
+            <h4 className="font-display font-semibold text-foreground mb-4 text-base">Brand</h4>
+            <ul className="space-y-2.5">
               {footerLinks.about.map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -114,25 +116,20 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 - {new Date().getFullYear()}{' '}
-            <a 
-              href="https://m-said-portfolio.netlify.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors font-medium"
-            >
-              M.Said
-            </a>
-            . All rights reserved.
+            © {new Date().getFullYear()} <span className="font-semibold text-foreground">Lille & Nest</span>. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy</Link>
-            <Link to="/terms" className="hover:text-primary transition-colors">Terms</Link>
+          <div className="flex items-center gap-6 text-sm text-muted-foreground">
+            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <span className="flex items-center gap-1.5 text-secondary font-medium">
+              <ShieldCheck className="h-4 w-4" />
+              OEKO-TEX® Certified
+            </span>
             <span className="flex items-center gap-1">
               <Lock className="h-4 w-4" />
-              Secure payments
+              Encrypted Checkout
             </span>
           </div>
         </div>
