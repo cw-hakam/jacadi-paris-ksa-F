@@ -26,7 +26,7 @@ export function CategoryCard({ category, className }: CategoryCardProps) {
             className="w-16 h-16 md:w-20 md:h-20 object-contain transition-transform duration-300 group-hover:scale-110"
           />
         </div>
-        <h3 className="font-display font-bold text-foreground text-xl">
+        <h3 className="font-display font-normal text-foreground text-xl">
           {category.name}
         </h3>
       </div>

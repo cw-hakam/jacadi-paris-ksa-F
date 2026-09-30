@@ -17,11 +17,11 @@ export function FeaturedProductsSection() {
     <section className="py-8 md:py-20 bg-muted/30">
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-normal text-foreground mb-4">
             {selectedAge ? 'Products' : 'Featured Picks'}
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto mb-8">
-            Find the perfect gift for every age and stage
+            Curated organic essentials and developmental toys for every stage
           </p>
           
           {/* Age filter */}

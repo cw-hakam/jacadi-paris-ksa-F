@@ -6,11 +6,11 @@ export function CategoriesSection() {
     <section className="py-8 md:py-20">
       <div className="container">
         <div className="text-center mb-10">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-normal text-foreground mb-4">
             Shop by Category
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            From cuddly toys to cozy clothes, find everything your little one needs
+            From sensory-friendly toys to cool breathable organic clothes for the Saudi summer
           </p>
         </div>
 
