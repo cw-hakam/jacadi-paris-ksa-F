@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playpen Sans', 'cursive'],
-        body: ['Nunito', 'sans-serif'],
+        display: ['Newsreader', 'Georgia', 'serif'],
+        body: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
