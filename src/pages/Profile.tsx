@@ -340,7 +340,7 @@ const Profile = () => {
                             <p className="text-sm text-muted-foreground">Placed on {order.date}</p>
                           </div>
                           <div className="text-right">
-                            <p className="font-semibold">${order.total}</p>
+                            <p className="font-semibold">SAR {order.total}</p>
                             <p className={cn("text-sm font-medium", order.statusColor)}>{order.status}</p>
                           </div>
                         </div>

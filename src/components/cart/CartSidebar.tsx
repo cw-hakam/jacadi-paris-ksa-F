@@ -112,7 +112,7 @@ export function CartSidebar() {
           <div className="p-4 border-t border-border bg-muted/50">
             <div className="flex items-center justify-between mb-4">
               <span className="text-muted-foreground">Subtotal</span>
-              <span className="font-display font-bold text-xl">${subtotal.toFixed(2)}</span>
+              <span className="font-display font-bold text-xl">SAR {subtotal.toFixed(2)}</span>
             </div>
             <p className="text-xs text-muted-foreground mb-4">
               Shipping and taxes calculated at checkout

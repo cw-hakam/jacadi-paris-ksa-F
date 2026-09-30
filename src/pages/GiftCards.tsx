@@ -65,14 +65,14 @@ const GiftCards = () => {
                             : "bg-muted hover:bg-muted/80"
                         )}
                       >
-                        ${amount}
+                        {amount}
                       </button>
                     ))}
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-muted-foreground">or</span>
                     <div className="flex-1 relative">
-                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">SAR </span>
                       <Input
                         type="number"
                         placeholder="Custom amount (25-500)"
@@ -128,7 +128,7 @@ const GiftCards = () => {
                 </div>
 
                 <Button type="submit" size="lg" className="w-full">
-                  Purchase Gift Card - ${customAmount || selectedAmount}
+                  Purchase Gift Card - SAR {customAmount || selectedAmount}
                 </Button>
               </form>
             </div>

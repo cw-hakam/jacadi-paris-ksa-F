@@ -134,21 +134,21 @@ const Cart = () => {
                   <div className="space-y-3 mb-6">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Subtotal</span>
-                      <span>${subtotal.toFixed(2)}</span>
+                      <span>SAR {subtotal.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Shipping</span>
-                      <span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span>
+                      <span>{shipping === 0 ? 'FREE' : `SAR ${shipping.toFixed(2)}`}</span>
                     </div>
                     {subtotal < 50 && (
                       <div className="flex items-center gap-2 text-sm text-muted-foreground bg-muted rounded p-3">
                         <Truck className="h-4 w-4" />
-                        <span>Add ${(50 - subtotal).toFixed(2)} for free shipping!</span>
+                        <span>Add SAR ${(300 - subtotal).toFixed(2)} for free shipping!</span>
                       </div>
                     )}
                     <div className="border-t pt-3 flex justify-between">
                       <span className="font-display font-bold text-lg">Total</span>
-                      <span className="font-display font-bold text-lg">${total.toFixed(2)}</span>
+                      <span className="font-display font-bold text-lg">SAR {total.toFixed(2)}</span>
                     </div>
                   </div>
 

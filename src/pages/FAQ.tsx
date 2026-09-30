@@ -16,7 +16,7 @@ const faqs = [
     questions: [
       {
         q: 'How long does shipping take?',
-        a: 'Standard shipping takes 5-7 business days. Express shipping (2-3 days) is available at checkout. Free shipping on orders over $50!',
+        a: 'Standard shipping takes 5-7 business days. Express shipping (2-3 days) is available at checkout. Free shipping over SAR 300!',
       },
       {
         q: 'Do you ship internationally?',
@@ -75,7 +75,7 @@ const faqs = [
       },
       {
         q: 'Do you offer gift cards?',
-        a: 'Yes! Digital gift cards are available in amounts from $25 to $500 and are delivered instantly via email.',
+        a: 'Yes! Digital gift cards are available in amounts from SAR 100 to SAR 2000 and are delivered instantly via email.',
       },
     ],
   },

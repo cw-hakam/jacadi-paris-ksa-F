@@ -230,7 +230,7 @@ const Checkout = () => {
                           <div className="text-sm text-muted-foreground">5-7 business days</div>
                         </Label>
                       </div>
-                      <span className="font-semibold">{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span>
+                      <span className="font-semibold">{shipping === 0 ? 'FREE' : `SAR ${shipping.toFixed(2)}`}</span>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded hover:bg-muted/50 transition-colors">
                       <div className="flex items-center gap-3">
@@ -240,7 +240,7 @@ const Checkout = () => {
                           <div className="text-sm text-muted-foreground">2-3 business days</div>
                         </Label>
                       </div>
-                      <span className="font-semibold">$12.99</span>
+                      <span className="font-semibold">SAR 45.00</span>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded hover:bg-muted/50 transition-colors">
                       <div className="flex items-center gap-3">
@@ -250,7 +250,7 @@ const Checkout = () => {
                           <div className="text-sm text-muted-foreground">Next business day</div>
                         </Label>
                       </div>
-                      <span className="font-semibold">$24.99</span>
+                      <span className="font-semibold">SAR 65.00</span>
                     </div>
                   </RadioGroup>
                 </div>
@@ -356,7 +356,7 @@ const Checkout = () => {
                         <div className="flex-1 min-w-0">
                           <p className="font-semibold text-sm truncate">{product.title}</p>
                           <p className="text-sm text-muted-foreground">Qty: {quantity}</p>
-                          <p className="text-sm font-semibold">${(product.price * quantity).toFixed(2)}</p>
+                          <p className="text-sm font-semibold">SAR {(product.price * quantity).toFixed(2)}</p>
                         </div>
                       </div>
                     ))}
@@ -365,19 +365,19 @@ const Checkout = () => {
                   <div className="space-y-3 mb-6 pt-6 border-t">
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">Subtotal</span>
-                      <span>${subtotal.toFixed(2)}</span>
+                      <span>SAR {subtotal.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">Shipping</span>
-                      <span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span>
+                      <span>{shipping === 0 ? 'FREE' : `SAR ${shipping.toFixed(2)}`}</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">Tax</span>
-                      <span>${tax.toFixed(2)}</span>
+                      <span>SAR {tax.toFixed(2)}</span>
                     </div>
                     <div className="border-t pt-3 flex justify-between">
                       <span className="font-display font-bold text-lg">Total</span>
-                      <span className="font-display font-bold text-lg">${total.toFixed(2)}</span>
+                      <span className="font-display font-bold text-lg">SAR {total.toFixed(2)}</span>
                     </div>
                   </div>
 
