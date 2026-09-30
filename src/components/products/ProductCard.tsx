@@ -115,11 +115,11 @@ export function ProductCard({ product, className, viewMode = 'grid' }: ProductCa
             <div className="flex items-center justify-between gap-4 mt-2">
               <div className="flex items-baseline gap-2">
                 <span className="font-display font-bold text-xl text-foreground">
-                  ${product.price.toFixed(2)}
+                  SAR {product.price.toFixed(2)}
                 </span>
                 {product.originalPrice && (
                   <span className="text-sm text-muted-foreground line-through">
-                    ${product.originalPrice.toFixed(2)}
+                    SAR {product.originalPrice.toFixed(2)}
                   </span>
                 )}
               </div>

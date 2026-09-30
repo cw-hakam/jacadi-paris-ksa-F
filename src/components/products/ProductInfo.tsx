@@ -59,11 +59,11 @@ export function ProductInfo({ product }: ProductInfoProps) {
       {/* Price */}
       <div className="flex items-baseline gap-3">
         <span className="font-display text-3xl font-bold text-foreground">
-          ${product.price.toFixed(2)}
+          SAR {product.price.toFixed(2)}
         </span>
         {product.originalPrice && (
           <span className="text-xl text-muted-foreground line-through">
-            ${product.originalPrice.toFixed(2)}
+            SAR {product.originalPrice.toFixed(2)}
           </span>
         )}
       </div>
@@ -104,7 +104,7 @@ export function ProductBenefits() {
     <div className="grid grid-cols-2 gap-4 p-4 bg-muted rounded">
       <div className="flex items-center gap-2 text-sm">
         <Truck className="h-4 w-4 text-primary" />
-        <span>Free shipping over $50</span>
+        <span>Free shipping over SAR 300</span>
       </div>
       <div className="flex items-center gap-2 text-sm">
         <RotateCcw className="h-4 w-4 text-primary" />
