@@ -52,27 +52,27 @@ const Contact = () => {
               <div className="bg-muted rounded p-6 text-center">
                 <Mail className="h-6 w-6 text-primary mb-3 mx-auto" />
                 <h3 className="font-display font-semibold mb-1 text-sm">Email</h3>
-                <p className="text-muted-foreground text-xs">hello@littleboys.com</p>
+                <p className="text-muted-foreground text-xs">hello@lilleandnest.sa</p>
               </div>
               <div className="bg-muted rounded p-6 text-center">
                 <Phone className="h-6 w-6 text-primary mb-3 mx-auto" />
                 <h3 className="font-display font-semibold mb-1 text-sm">Phone</h3>
-                <p className="text-muted-foreground text-xs">1-800-LITTLEBOYS</p>
+                <p className="text-muted-foreground text-xs">+966 50 123 4567</p>
               </div>
               <div className="bg-muted rounded p-6 text-center">
                 <MapPin className="h-6 w-6 text-primary mb-3 mx-auto" />
                 <h3 className="font-display font-semibold mb-1 text-sm">Address</h3>
                 <p className="text-muted-foreground text-xs">
-                  123 Imagination Lane<br />
-                  San Francisco, CA 94102
+                  Olaya Street<br />
+                  Riyadh 12211, Saudi Arabia
                 </p>
               </div>
               <div className="bg-muted rounded p-6 text-center">
                 <Clock className="h-6 w-6 text-primary mb-3 mx-auto" />
                 <h3 className="font-display font-semibold mb-1 text-sm">Hours</h3>
                 <p className="text-muted-foreground text-xs">
-                  Mon-Fri: 9am - 6pm PST<br />
-                  Sat-Sun: 10am - 4pm PST
+                  Sun-Thu: 9am - 6pm AST<br />
+                  Sat: 10am - 4pm AST
                 </p>
               </div>
             </div>

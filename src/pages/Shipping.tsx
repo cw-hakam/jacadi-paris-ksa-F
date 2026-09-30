@@ -28,26 +28,26 @@ const Shipping = () => {
               <div className="bg-card rounded p-6 shadow-soft">
                 <Truck className="h-8 w-8 text-primary mb-4" />
                 <h3 className="font-display text-lg font-bold mb-2">Standard Shipping</h3>
-                <p className="text-muted-foreground text-sm mb-3">5-7 business days</p>
-                <p className="font-semibold">$5.99 or FREE over $50</p>
+                <p className="text-muted-foreground text-sm mb-3">3-5 business days</p>
+                <p className="font-semibold">SAR 25 or FREE over SAR 300</p>
               </div>
               <div className="bg-card rounded p-6 shadow-soft border-2 border-primary">
                 <Package className="h-8 w-8 text-primary mb-4" />
                 <h3 className="font-display text-lg font-bold mb-2">Express Shipping</h3>
-                <p className="text-muted-foreground text-sm mb-3">2-3 business days</p>
-                <p className="font-semibold">$12.99</p>
+                <p className="text-muted-foreground text-sm mb-3">1-2 business days (Major Cities)</p>
+                <p className="font-semibold">SAR 45</p>
               </div>
               <div className="bg-card rounded p-6 shadow-soft">
                 <Clock className="h-8 w-8 text-primary mb-4" />
-                <h3 className="font-display text-lg font-bold mb-2">Next Day Delivery</h3>
-                <p className="text-muted-foreground text-sm mb-3">Order by 2pm local time</p>
-                <p className="font-semibold">$19.99</p>
+                <h3 className="font-display text-lg font-bold mb-2">Same Day Delivery</h3>
+                <p className="text-muted-foreground text-sm mb-3">Riyadh only, order by 2pm</p>
+                <p className="font-semibold">SAR 65</p>
               </div>
               <div className="bg-card rounded p-6 shadow-soft">
                 <Globe className="h-8 w-8 text-primary mb-4" />
-                <h3 className="font-display text-lg font-bold mb-2">International</h3>
-                <p className="text-muted-foreground text-sm mb-3">10-21 business days</p>
-                <p className="font-semibold">From $14.99</p>
+                <h3 className="font-display text-lg font-bold mb-2">GCC & International</h3>
+                <p className="text-muted-foreground text-sm mb-3">5-14 business days</p>
+                <p className="font-semibold">From SAR 85</p>
               </div>
             </div>
 
@@ -72,10 +72,10 @@ const Shipping = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold mb-2">International Shipping</h3>
+                <h3 className="font-semibold mb-2">GCC & International Shipping</h3>
                 <p className="text-muted-foreground">
-                  We ship to over 50 countries! International customers are responsible 
-                  for any customs duties or taxes that may apply.
+                  We ship across the GCC and internationally! International customers are responsible 
+                  for any customs duties or taxes that may apply in their respective countries.
                 </p>
               </div>
 
